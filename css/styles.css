@@ -1,0 +1,36 @@
+.body.dark {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #222831;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container.dark {
+  background-color: #393e46;
+}
+
+.container.dark .header.dark {
+  color: #b55400;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .container {
+  height: 50vh;
+  width: 70vw;
+  border-radius: 15px;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
