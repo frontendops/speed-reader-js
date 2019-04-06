@@ -40,7 +40,10 @@ body {
 }
 
 body .container {
-  height: 40vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 36px 0px;
   width: 70vw;
   border-radius: 15px;
   text-align: center;
@@ -65,11 +68,21 @@ body .container .main-content {
 body .container .main-content .words-container {
   padding: 20px 10px;
   margin-bottom: 15px;
-  font-size: 1.3em;
+  font-size: 1.4em;
   line-height: 1.7;
 }
 
 body .container .main-content .words-container .single-word {
   color: #fff;
+}
+
+body .container .input-label {
+  font-size: 1.4em;
+  color: #b55400;
+  padding-bottom: 10px;
+}
+
+body .container #user-input {
+  border-radius: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
