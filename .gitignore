@@ -1,2 +1,5 @@
 *.map
 .sass-cache*
+
+/css/themes/dark-mode.css.map
+/css/themes/light-mode.css.map
