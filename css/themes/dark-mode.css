@@ -21,4 +21,16 @@
 .container.dark .header.dark {
   color: #b55400;
 }
+
+.container.dark .header.dark .first {
+  color: white;
+}
+
+.container.dark .play-dark {
+  color: white;
+}
+
+.container.dark .words-container.dark {
+  color: white;
+}
 /*# sourceMappingURL=dark-mode.css.map */
