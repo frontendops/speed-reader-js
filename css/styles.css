@@ -68,4 +68,8 @@ body .container .main-content .words-container {
   font-size: 1.3em;
   line-height: 1.7;
 }
+
+body .container .main-content .words-container .single-word {
+  color: #b55400;
+}
 /*# sourceMappingURL=styles.css.map */
