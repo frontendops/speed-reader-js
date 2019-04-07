@@ -45,9 +45,6 @@ playBtn.addEventListener('click', () => {
 
 })
 
-
-// if no input is defined or if userInput.length == 0
-// play the default text
-// if there is user text defined play that text
+//clicking play again speeds up the timer
 
 
