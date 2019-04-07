@@ -7,7 +7,7 @@ console.log(words)
 let input = document.querySelector('#user-input')
 let userInput = null
 
-let index = null
+let index = -1
 
 let interval = null
 
@@ -19,9 +19,15 @@ function getUserInput() {
 function startTimer() {
     index += 1;
     text.innerHTML = ""
-    text.innerHTML = `<span class="single-word">${userInput[index]}</span>`
-    console.log(userInput[index])
-    time = setTimeout(startTimer, 250);
+    if (userInput.length === 0) {
+        text.innerHTML = `<span class="single-word">${words[index]}</span>`
+        console.log(words[index])
+        time = setTimeout(startTimer, 250);
+    } else {
+        text.innerHTML = `<span class="single-word">${userInput[index]}</span>`
+        console.log(userInput[index])
+        time = setTimeout(startTimer, 250);
+    }
 
     if (index === userInput.length - 1) {
         clearTimeout(time);

@@ -19,6 +19,8 @@
 
 .container.dark .play-dark {
   color: white;
+  margin-top: 25px;
+  font-size: 1.6em;
 }
 
 .container.dark .words-container.dark {
