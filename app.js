@@ -29,7 +29,7 @@ function startTimer() {
         time = setTimeout(startTimer, 250);
     }
 
-    if (index === userInput.length - 1) {
+    if (index === userInput.length - 1 || index === words.length - 1) {
         clearTimeout(time);
     }
 }
@@ -45,6 +45,7 @@ playBtn.addEventListener('click', () => {
 
 })
 
-//clicking play again speeds up the timer
+// clicking play again speeds up the timer
 
+// default paragraph is not stopping after finshing last word
 
