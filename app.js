@@ -3,12 +3,9 @@ const playBtn = document.querySelector('.play-dark')
 
 let words = text.innerHTML.trim().split(" ").filter(word => word !== "");
 console.log(words)
-
 let input = document.querySelector('#user-input')
-let userInput = null
-
+let userInput = ""
 let index = -1
-
 let interval = null
 
 function getUserInput() {
@@ -23,15 +20,23 @@ function startTimer() {
         text.innerHTML = `<span class="single-word">${words[index]}</span>`
         console.log(words[index])
         time = setTimeout(startTimer, 250);
+        if (index === words.length - 1) {
+            console.log('stoping now');
+
+            clearTimeout(time);
+        }
     } else {
         text.innerHTML = `<span class="single-word">${userInput[index]}</span>`
         console.log(userInput[index])
+        console.log(index)
         time = setTimeout(startTimer, 250);
+        if (index === userInput.length - 1) {
+            console.log('stoping now');
+
+            clearTimeout(time);
+        }
     }
 
-    if (index === userInput.length - 1 || index === words.length - 1) {
-        clearTimeout(time);
-    }
 }
 
 function resetWords() {
@@ -39,13 +44,10 @@ function resetWords() {
 }
 
 playBtn.addEventListener('click', () => {
+    resetWords()
     getUserInput()
     startTimer()
-    resetWords()
 
 })
 
-// clicking play again speeds up the timer
-
-// default paragraph is not stopping after finshing last word
 
