@@ -26,4 +26,9 @@
 .container.dark .words-container.dark {
   color: white;
 }
+
+.container.dark .speed.dark {
+  color: white;
+  font-size: 1.6em;
+}
 /*# sourceMappingURL=dark-mode.css.map */

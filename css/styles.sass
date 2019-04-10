@@ -1,4 +1,6 @@
 @import "./themes/dark-mode.sass"
+@import "themes/btn-styling"
+
 
 body 
     height: 100vh
@@ -8,9 +10,16 @@ body
     align-items: center
     font-size: 16px
 
+    .moon-icon
+        font-size: 2em
+        color: white
+        position: absolute
+        top: 15px
+        right: 15px
+
     .container
         height: fit-content
-        padding: 36px 0px
+        padding: 36px 15px
         width: 70vw
         border-radius: 15px
         text-align: center
@@ -30,6 +39,12 @@ body
 
                 .single-word
                     color: #fff
+
+            .button-container
+
+                .btn
+                    @include button
+                    
         
         .input-label
             font-size: 1.4em
