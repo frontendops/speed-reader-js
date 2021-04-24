@@ -1,6 +1,6 @@
 # speed-reader-js
 
 # What is it?
-Add text and reading it at a faster rate without needing to move your eyes across the page. 
+A speed reader allows you to read text at a faster rate without needing to move your eyes around a screen. Insert any text and select a speed to read it at. 
 
 ![](speedReader.gif)
